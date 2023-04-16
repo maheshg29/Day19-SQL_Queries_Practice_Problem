@@ -32,5 +32,11 @@ UPDATE Customer SET Country='India', Salary=44000.00, Pincode='520140' WHERE Cus
 //*5) Update customer details based on customer name.*/
 UPDATE Customer SET Country='UAE', Salary=35000.00, Pincode='424002' WHERE CustomerName='mahesh';
 
+//*6) Show number of customers in each country.*/
+SELECT Country, COUNT(*) AS NumCustomers 
+FROM Customer 
+GROUP BY Country;
+
+
 
 
