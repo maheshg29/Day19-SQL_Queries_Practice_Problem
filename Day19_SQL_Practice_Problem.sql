@@ -29,5 +29,8 @@ UPDATE Customer SET Country='USA', Salary=55000.00, Pincode='424001' WHERE Custo
 UPDATE Customer SET Country='Canada', Salary=66000.00, Pincode='456001' WHERE CustomerName='akshay';
 UPDATE Customer SET Country='India', Salary=44000.00, Pincode='520140' WHERE CustomerName='Ganesh';
 
+//*5) Update customer details based on customer name.*/
+UPDATE Customer SET Country='UAE', Salary=35000.00, Pincode='424002' WHERE CustomerName='mahesh';
+
 
 
