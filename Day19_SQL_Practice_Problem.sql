@@ -65,4 +65,7 @@ INSERT INTO OrderTable (ProductName,Quantity,Rating,CustomerId) VALUES
 
 SELECT * FROM OrderTable;
 
-
+/*9) Fetch data from both tables.*/
+SELECT OrderTable.ProductName , OrderTable.Quantity, Customer.CustomerName
+FROM OrderTable
+INNER JOIN Customer ON OrderTable.CustomerId=Customer.CustomerId;
