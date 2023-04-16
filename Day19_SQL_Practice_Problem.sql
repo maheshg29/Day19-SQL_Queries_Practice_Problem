@@ -13,3 +13,8 @@ CREATE TABLE Customer (
     Address VARCHAR(255)
 );
 SELECT * FROM Customer;
+
+INSERT INTO Customer (CustomerName, Phone, Address) VALUES 
+('mahesh', '7894561237', '12B shanti nagar'),
+('akshay', '9871234565', '10D Shree Nagar'),
+('Ganesh', '7845961235', '27A OM Nagar');
