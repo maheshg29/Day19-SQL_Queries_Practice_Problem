@@ -48,4 +48,21 @@ SELECT SUM(Salary) AS MinSalary FROM Customer;
 SELECT AVG(Salary) AS MinSalary FROM Customer;  
 
 
+/*8) Create order table with columns order id, product name, quantity and
+rating.*/
+CREATE TABLE OrderTable (
+  OrderId INT IDENTITY(1,1) PRIMARY KEY,
+  ProductName VARCHAR(50),
+  Quantity INT,
+  Rating INT,
+  CustomerId INT FOREIGN KEY REFERENCES Customer(CustomerId)
+);
+
+INSERT INTO OrderTable (ProductName,Quantity,Rating,CustomerId) VALUES
+('Book', 10, 5,1),
+('NoteBook', 9, 4, 2),
+('Paper', 12, 3, 3);
+
+SELECT * FROM OrderTable;
+
 
