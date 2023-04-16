@@ -37,6 +37,15 @@ SELECT Country, COUNT(*) AS NumCustomers
 FROM Customer 
 GROUP BY Country;
 
+/*7) Show maximum salary, minimum salary, total Salary and average salary
+for the customers.*/
+SELECT MAX(Salary) AS MaxSalary FROM Customer; 
+
+SELECT MIN(Salary) AS MinSalary FROM Customer; 
+
+SELECT SUM(Salary) AS MinSalary FROM Customer;
+
+SELECT AVG(Salary) AS MinSalary FROM Customer;  
 
 
 
